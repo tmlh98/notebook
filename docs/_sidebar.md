@@ -8,8 +8,8 @@
   * [ConcurrentHashMap源码解析](multithreads/ConcurrentHashMap源码解析)
 
 * [Python](python/)
-  * [入门](python/0_入门/)
+  * [入门](python/01_入门/)
   * [流程控制语句](python/02_流程控制语句/)
-  * [序列](python/03_序列)
-  * [函数](python/04_函数)
-  * [对象](python/05_对象)
+  * [序列](python/03_序列/)
+  * [函数](python/04_函数/)
+  * [对象](python/05_对象/)
