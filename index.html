@@ -26,21 +26,49 @@
       //autoHeader: true , //根据 _sidebar.md 的内容自动为每个页面增加标题
       loadNavbar: true ,//导航栏
       //coverpage: true, //封面
+       
+
       copyCode: {
-	    buttonText : 'Copy',
-	    errorText  : 'Error',
-	    successText: 'Copied'
-	  }
+  	    buttonText : 'Copy',
+  	    errorText  : 'Error',
+  	    successText: 'Copied'
+	    } ,
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span><a href="https://github.com/tmlh98">天莫轮回</a> &copy;2019.</span>',
+            '<span> published with <a href="#" target="_blank">devdocs</a>.</span>',
+            '</footer>'
+          ].join('')
+
+          hook.afterEach(function (html) {
+            return html + footer
+          })
+
+        } 
+      ]  
+
+
+
+
     }
   </script>
    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
-
  
 <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-powershell.min.js"></script>
 
+ 
 <script src="//unpkg.com/docsify-copy-code"></script>
 <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
 
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
 </html>
