@@ -1,8 +1,8 @@
 #!/bash/bin
 MSG=$1
 
-if [ ! -n "$MSG"]; then
-	MSG="."
+if [ ! -n "$MSG" ]; then
+	MSG=`date +"%Y-%m-%d"`
 fi
 
 git add .
@@ -10,7 +10,7 @@ git add .
 
 echo '----------(git add )---------'
 
-git commit -m "$MSG"
+git commit -m "${MSG}"
 
 
 echo '----------(git commit )---------'
