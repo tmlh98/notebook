@@ -1,4 +1,12 @@
 * [首页](/)
+* [Python](python/)
+  * [入门](python/01_入门/)
+  * [流程控制语句](python/02_流程控制语句/)
+  * [序列](python/03_序列/)
+  * [函数](python/04_函数/)
+  * [对象](python/05_对象/)
+  * [异常和文件](python/06_异常和文件/)
+ 
 * [设计模式](design-patterns/)
   * [设计模式的七大原则](design-patterns/设计模式的七大原则.md)
   * [UML类图](design-patterns/UML类图.md)
@@ -8,11 +16,4 @@
   * [线程安全问题产生的原因](multithreads/线程安全问题产生的原因)
   * [ConcurrentHashMap源码解析](multithreads/ConcurrentHashMap源码解析)
 
-* [Python](python/)
-  * [入门](python/01_入门/)
-  * [流程控制语句](python/02_流程控制语句/)
-  * [序列](python/03_序列/)
-  * [函数](python/04_函数/)
-  * [对象](python/05_对象/)
-  * [异常和文件](python/06_异常和文件/)
- 
+
