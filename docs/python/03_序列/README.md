@@ -101,9 +101,12 @@ my_tuple = () # 使用()来创建元组
 my_tuple = 10,20,30,40 #当元组不是空元组时，括号可以省略
 my_tuple = 40, # 如果元组不是空元组，它里边至少要有一个,
 ```
+
 #### 元组的解包（解构）
-> 解包指就是将元组当中每一个元素都赋值给一个变量
-```python
+
+  >  解包指就是将元组当中每一个元素都赋值给一个变量
+
+```pythoN
 my_tuple = 10 , 20 , 30 , 40
 a,b,c,d = my_tuple
 # 交互a 和 b的值，这时我们就可以利用元组的解包
@@ -115,8 +118,10 @@ a , b , *c = my_tuple
 
 
 ### 字典（dict）
-> 字典属于一种新的数据结构，称为映射（mapping）（key-value）结构
-> 语法： {key:value,key:value,key:value}
+
+  +  字典属于一种新的数据结构，称为映射（mapping）（key-value）结构.
+  +  语法： {key:value,key:value,key:value}
+
 ```python
 my_dict = {} # 创建了一个空字典
 #遍历
