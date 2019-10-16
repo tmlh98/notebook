@@ -1,10 +1,19 @@
 * [**Python**](python/)
   * [入门](python/01_入门/)
+    * [基本语法](python/基本语法.md)
+    * [字符串](python/字符串.md)
   * [流程控制语句](python/02_流程控制语句/)
   * [序列](python/03_序列/)
   * [函数](python/04_函数/)
   * [对象](python/05_对象/)
   * [异常和文件](python/06_异常和文件/)
+
+
+
+
+
+
+
 
 * [**JAVA**](#)
   * [**设计模式**](design-patterns/设计模式的七大原则.md)
