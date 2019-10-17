@@ -14,7 +14,7 @@
 + 列表中可以保存任意的对象
 + 列表中的对象都会按照插入的顺序存储到列表中
 + 列表的索引是从0开始
-```pyhotn
+```python
 #我们通过[]来创建列表
 my_list = [10,20,30,40,50]
 # 通过索引获取列表中的元素
@@ -54,7 +54,7 @@ print(stus[0:5:2])
 print(stus[::-1])
 
 ```
-    
+
 #### 其他操作
 
 + in 和 not in 判断元素是否在列表种
@@ -104,9 +104,15 @@ my_tuple = 40, # 如果元组不是空元组，它里边至少要有一个,
 
 #### 元组的解包（解构）
 
+<<<<<<< HEAD:docs/python/03_序列/README.md
   >  解包指就是将元组当中每一个元素都赋值给一个变量
 
 ```pythoN
+=======
+> 解包指就是将元组当中每一个元素都赋值给一个变量
+
+```python
+>>>>>>> 9beaccc941c3e56b443a8bc45e0051c11c4309d7:docs/python/04_序列/README.md
 my_tuple = 10 , 20 , 30 , 40
 a,b,c,d = my_tuple
 # 交互a 和 b的值，这时我们就可以利用元组的解包
@@ -118,9 +124,15 @@ a , b , *c = my_tuple
 
 
 ### 字典（dict）
+<<<<<<< HEAD:docs/python/03_序列/README.md
 
   +  字典属于一种新的数据结构，称为映射（mapping）（key-value）结构.
   +  语法： {key:value,key:value,key:value}
+=======
+字典属于一种新的数据结构，称为映射（mapping）（key-value）结构
+
+> 语法： {key:value,key:value,key:value}
+>>>>>>> 9beaccc941c3e56b443a8bc45e0051c11c4309d7:docs/python/04_序列/README.md
 
 ```python
 my_dict = {} # 创建了一个空字典
