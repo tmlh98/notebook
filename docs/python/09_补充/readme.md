@@ -25,8 +25,6 @@ import fibo as fib
 	- from m import Person,test
 	- from m import * # 引入到模块中所有内容，一般不会使用
 
-
-
 ### 包 Package
 
 + 包也是一个模块
