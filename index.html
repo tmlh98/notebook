@@ -34,6 +34,9 @@
   	    successText: 'Copied'
 	    } ,
       plugins: [
+	EditOnGithubPlugin.create(
+          'https://github.com/tmlh98/notebook/blob/master/docs/'
+        ),
         function (hook) {
           var footer = [
             '<hr/>',
@@ -47,10 +50,8 @@
             return html + footer
           })
 
-        } ,
-         EditOnGithubPlugin.create(
-	 'https://github.com/tmlh98/notebook/edit/master/docs/'
-	 ) 
+        }        
+	
       ]  
 
       ,
