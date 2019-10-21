@@ -14,6 +14,7 @@
 <body>
  
   <div id="app"></div>
+  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
   <script>
     window.$docsify = {
       //repo: 'tmlh98/notebook',
@@ -34,8 +35,8 @@
   	    successText: 'Copied'
 	    } ,
       plugins: [
-	EditOnGithubPlugin.create(
-          'https://github.com/tmlh98/notebook/blob/master/docs/'
+	       EditOnGithubPlugin.create(
+          'https://github.com/tmlh98/notebook/blob/master/docs/' ,'','Edit'
         ),
         function (hook) {
           var footer = [
@@ -99,6 +100,8 @@
 
 <script src="//unpkg.com/docsify/lib/plugins/ga.js"></script>
 
+
+
 <script>
   if (typeof navigator.serviceWorker !== 'undefined') {
     navigator.serviceWorker.register('./assets/static/js/sw.js')
@@ -106,5 +109,5 @@
 </script>
 
 <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+
 </html>
