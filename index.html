@@ -47,7 +47,8 @@
             return html + footer
           })
 
-        } 
+        } ,
+         EditOnGithubPlugin.create(docBase, docEditBase, title) 
       ]  
 
       ,
@@ -102,4 +103,5 @@
 </script>
 
 <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
 </html>
