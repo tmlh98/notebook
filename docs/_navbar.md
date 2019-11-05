@@ -1,9 +1,8 @@
 * [首页](/)
 
 
-* [**工具**](tools/IDEA快捷键大全.md)
-	* [**IDEA快捷键**](tools/IDEA快捷键大全.md)
-	* [**vscode快捷键**](tools/vscode快捷键大全.md)
+* [**前端**](web/es6/Promise对象.md)
+	* [**Promise对象**](web/es6/Promise对象.md) 
 
 * [**设计模式**](design-patterns/设计模式的七大原则.md)
   * [设计模式的七大原则](design-patterns/设计模式的七大原则.md)

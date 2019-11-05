@@ -5,7 +5,7 @@ if [ ! -n "$MSG" ]; then
 	MSG=`date +"%Y-%m-%d %H:%M:%S"`
 
 fi
-git add .
+git add -A
 
 
 echo '----------(git add )---------'
