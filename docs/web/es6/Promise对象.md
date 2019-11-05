@@ -47,8 +47,11 @@ promise.then(function(
 // onRejected 是用来接收promise失败的原因
 promise.then(onFulfilled, onRejected);
 ```
+
 > 注意：then方法是异步执行的
+
 (2) resolve(成功) onFulfilled会被调用
+
 ```
 const promise = new Promise((resolve, reject) => {
    resolve('fulfilled'); // 状态由 pending => fulfilled
@@ -59,7 +62,9 @@ promise.then(result => { // onFulfilled
     
 })
 ```
+
 (3) reject(失败) onRejected会被调用
+
 ```
 const promise = new Promise((resolve, reject) => {
    reject('rejected'); // 状态由 pending => rejected
@@ -87,7 +92,9 @@ promise.then(onFulfilled)
 
 ```
 ## promise chain
+
 promise.then方法每次调用 都返回一个新的promise对象 所以可以链式写法
+
 ```javascript
 function taskA() {
     console.log("Task A");
@@ -127,7 +134,9 @@ new Promise((resolve, reject) => {
 });
 ```
 (3) Promise.all 接收一个promise对象数组为参数
-只有全部为resolve才会调用 通常会用来处理 多个并行异步操作
+
+> 只有全部为resolve才会调用 通常会用来处理 多个并行异步操作
+
 ```javascript
 const p1 = new Promise((resolve, reject) => {
     resolve(1);
@@ -148,7 +157,9 @@ Promise.all([p1, p2, p3]).then(data => {
 });
 ```
 (4) Promise.race 接收一个promise对象数组为参数
-Promise.race 只要有一个promise对象进入 FulFilled 或者 Rejected 状态的话，就会继续进行后面的处理。
+
+> Promise.race 只要有一个promise对象进入 FulFilled 或者 Rejected 状态的话，就会继续进行后面的处理。
+
 ```javascript
 function timerPromisefy(delay) {
     return new Promise(function (resolve, reject) {
