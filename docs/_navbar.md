@@ -14,7 +14,7 @@
   * [线程安全问题产生的原因](multithreads/线程安全问题产生的原因.md)
   * [ConcurrentHashMap源码解析](multithreads/ConcurrentHashMap源码解析.md)
 
-* [**服务器**](webserver/PM2的常用命令及安装教程.md)
+* [**服务器**](webserver/linux常用命令.md)
   * [PM2的常用命令及安装教程](webserver/PM2的常用命令及安装教程.md)
   * [如何在centos7上安装nginx](webserver/如何在centos7上安装nginx.md)
   * [linux常用命令](webserver/linux常用命令.md)
