@@ -2,59 +2,94 @@
 
 > Dockerfile由一行行命令语句组成，并且支持用“#”开头作为注释，一般的，Dockerfile分为四部分：基础镜像信息，维护者信息，镜像操作指令和容器启动时执行的指令。
 
+
 ### Dockerfile指令
 
 1. FROM
-格式：FROM <image>或 FROM <image>:<tag>
-第一条指令必须为FROM指令，并且，如果在同一个Dockerfile中创建多个镜像时，可以使用多个FROM指令（每个镜像一次）
+
+```
+FROM <image>
+or
+FROM <image>:<tag>
+```
+
+!> 第一条指令必须为FROM指令，并且，如果在同一个Dockerfile中创建多个镜像时，可以使用多个FROM指令（每个镜像一次）
 
 2. MAINTAINET
-格式：MAINTAINET <name>
+
+```
+MAINTAINET <name>
+```
 指定维护者的信息
 
 3. RUN
-格式：RUN <command> 或 RUN ["", "", ""]
+```
+RUN <command> 
+or
+RUN ["", "", ""]
+```
 每条指令将在当前镜像基础上执行，并提交为新的镜像。（可以用“\”换行）
 
 4. CMD
-格式：CMD ["","",""]
-指定启动容器时执行的命令，每个Dockerfile只能有一条CMD指令，如果指定了多条指令，则最后一条执行。（会被启动时指定的命令覆盖）
+```
+CMD ["","",""]
+```
+
+!> 指定启动容器时执行的命令，每个Dockerfile只能有一条CMD指令，如果指定了多条指令，则最后一条执行。（会被启动时指定的命令覆盖）
 
 5. EXPOSE
-格式：EXPOSE <port>  [ <port> ...]
+```
+EXPOSE <port>  [ <port> ...]
+```
 告诉Docker服务端暴露端口，在容器启动时需要通过 -p 做端口映射
 
 6. ENV
-格式：ENV <key> <value>
+
+```
+ENV <key> <value>
+```
 指定环境变量，会被RUN指令使用，并在容器运行时保存
 
 7. ADD
-格式：ADD  <src>  <dest>
+```
+ADD  <src>  <dest>
+```
 复制指定的到容器的中，可以是Dockerfile所在的目录的一个相对路径；可以是URL，也可以是tar.gz（自动解压）
 
 8. COPY
-格式：COPY <src>  <dest>
+```
+COPY <src>  <dest>
+```
 复制本地主机的（ 为 Dockerfile 所在目录的相对路径）到容器中的（当使用本地目录为源目录时，推荐使用 COPY）
 
 9. ENTRYPOINT
-格式：ENTRYPOINT ["","",""]
+```
+ENTRYPOINT ["","",""]
+```
 配置容器启动后执行的命令，并且不可被 docker run 提供的参数覆盖。（每个 Dockerfile 中只能有一个 ENTRYPOINT ，当指定多个时，只有最后一个起效）
 
 10. VOLUME
-格式：VOLUME ["/mnt"]
+```
+VOLUME ["/mnt"]
+```
 创建一个可以从本地主机或其他容器挂载的挂载点，一般用来存放数据库和需要保持的数据等
 
 11. USER
-格式：USER daemon
+```
+USER daemon
+```
 指定运行容器时的用户名或 UID，后续的 RUN 也会使用指定用户。
 
 12. WORKDIR
-格式：WORKDIR /path/to/workdir
+```
+WORKDIR /path/to/workdir
+```
 为后续的 RUN 、 CMD 、 ENTRYPOINT 指令配置工作目录。（可以使用多个 WORKDIR 指令，后续命令如果参数是相对路径， 则会基于之前命令指定的路径）
 
 13. ONBUILD
-
-格式：ONBUILD [INSTRUCTION]
+```
+ONBUILD [INSTRUCTION]
+```
 配置当所创建的镜像作为其它新创建镜像的基础镜像时，所执行的操作指令
  
 
@@ -74,10 +109,15 @@ docker run --name mysql57 \
 mysql:5.7.18
 ```
 参数说明:
--e MYSQL_ROOT_PASSWORD=root  123456  设置root用户的密码为123456
--e MYSQL_DATABASE=test				 新建数据库为test
--e MYSQL_USER=tmlh                   新建tmlh用户
--e MYSQL_PASSWORD=tmlhtest           新建tmlh用户密码为tmlhtest  
+
++  MYSQL_ROOT_PASSWORD：必选变量，root 超级用户的密码。
++  MYSQL_DATABASE：可选变量，启动时创建的数据库的名称。
++  MYSQL_USER：可选变量，用户名
++  MYSQL_PASSWORD：可选变量，密码
++  MYSQL_ALLOW_EMPTY_PASSWORD：可选变量，设置 yes 允许 root 用户的空密码为空
++  MYSQL_RANDOM_ROOT_PASSWORD：可选变量，设置 yes 为 root 用户生成随机初始密码并打印到stdout。
++  MYSQL_ONETIME_PASSWORD：可选变量，在首次登录时强制更改密码。(MySQL 5.6+上支持此功能)
+
 
 
 ### only_full_group_by 问题

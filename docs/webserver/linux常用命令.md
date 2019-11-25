@@ -2,13 +2,14 @@
     
    打包常用
 ```       
-	1.查询端口： ps aux|grep java
-	    
-	2.杀死端口：kill -9 端口号
-	    
-	3.运行：nohup java -jar [jar包名] --server.port=8001 --spring.profiles.active=[配置文件] &
-	            
-	4.查看日志：tail -f nohup.out
+#查询端口 
+ps aux|grep java
+#杀死端口
+kill -9 端口号
+#运行
+nohup java -jar [jar包名] --server.port=8001 --spring.profiles.active=[配置文件] &
+#查看日志
+tail -f nohup.out
 ```    
   授权
 
@@ -32,9 +33,18 @@
 	tar -xvf 解压文件名
 ```
 	    	    
- 关闭防火墙 
+ 防火墙 
 ```shell
-	systemctl stop firewalld
+firewall-cmd --list-all
+#查看开放的端口号 
+firewall-cmd --list-all  
+#设置开放的端口号 
+firewall-cmd --add-service=http –permanent 
+firewall-cmd --add-port=80/tcp --permanent  
+#重启防火墙 
+firewall-cmd –reload
+#关闭防火墙 
+systemctl stop firewalld
 ```
 	   
  用于查看指定的端口号的进程情况
@@ -44,9 +54,10 @@
 	
 下载文件    
 ```shell
- 	wget 下载地址 #下载文件
+ 	wget 下载地址 
 ```		    
-	查看ip
+
+查看ip
 ```shell
     ip addr show
 ```	      
