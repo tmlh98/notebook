@@ -183,4 +183,13 @@ docker run -p 8080:8080  --name nginx --network=bridge-user \
 -v /home/www/docker/nginx/logs:/var/log/nginx \
 -d nginx
 ```
+## 常见问题
 
+### 时间差8小时
+
+```
+docker run -d -p 8080:8080 \
+-v /etc/timezone:/etc/timezone \
+-v /etc/localtime:/etc/localtime \
+springboot:test
+```
