@@ -3,6 +3,28 @@
 > Dockerfile由一行行命令语句组成，并且支持用“#”开头作为注释，一般的，Dockerfile分为四部分：基础镜像信息，维护者信息，镜像操作指令和容器启动时执行的指令。
 
 
+### docker 命令
+
++ docker run -d -p 91:80 nginx ：在后台运行nginx，若没有镜像则先下载，并将容器的80端口映射为宿主机的91端口。
+	- -d：后台运行 
+	- -P：随机端口映射
+	- -p：指定端口映射
+	- -net：网络模式
+
++ docker ps：列出运行中的容器
++ docker ps -a ：列出所有的容器
++ docker stop 容器id：停止容器
++ docker kill 容器id：强制停止容器
++ docker start 容器id：启动已停止的容器
++ docker inspect 容器id：查看容器的所有信息
++ docker container logs 容器id：查看容器日志
++ docker top 容器id：查看容器里的进程
++ docker exec -it 容器id /bin/bash：进入容器
++ exit：退出容器
++ docker rm 容器id：删除已停止的容器
++ docker rm -f 容器id：删除正在运行的容器
+
+
 ### Dockerfile指令
 
 1. FROM
@@ -30,12 +52,14 @@ RUN ["", "", ""]
 ```
 每条指令将在当前镜像基础上执行，并提交为新的镜像。（可以用“\”换行）
 
+!> RUN命令在 image 文件的构建阶段执行，执行结果都会打包进入 image 文件
+
 4. CMD
 ```
 CMD ["","",""]
 ```
 
-!> 指定启动容器时执行的命令，每个Dockerfile只能有一条CMD指令，如果指定了多条指令，则最后一条执行。（会被启动时指定的命令覆盖）
+!> 容器时执行的命令，每个Dockerfile只能有一条CMD指令，如果指定了多条指令，则最后一条执行。（会被启动时指定的命令覆盖）
 
 5. EXPOSE
 ```
