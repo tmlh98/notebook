@@ -9,8 +9,8 @@ yum -y install crontabs
 
 ```
 
-> vixie-cron 是 cron 的主程序；
-> crontabs 是用来安装、卸装、或列举用来驱动 cron 守护进程的表格的程序。
+>  `vixie-cron` 是 cron 的主程序；
+>  `crontabs` 是用来安装、卸装、或列举用来驱动 cron 守护进程的表格的程序。
 
 ## 启动和配置服务
 
