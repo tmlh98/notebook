@@ -263,9 +263,13 @@ $ git reset --keep [commit]
 # 后者的所有变化都将被前者抵消，并且应用到当前分支
 $ git revert [commit]
 
-暂时将未提交的变化移除，稍后再移入
+#暂时将未提交的变化移除，稍后再移入
 $ git stash
 $ git stash pop
+
+#撤销本次commit,但仍保留代码
+$ git reset --soft HEAD^
+
 ```
 ### 其他
 ```
@@ -282,4 +286,7 @@ $ git checkout -B env/test [tagname]
 
 # 切换到远程分支并同步到本地
 $ git checkout -b dev origin/dev
+
+# 修改commit注释
+$git commit --amend
 ```
