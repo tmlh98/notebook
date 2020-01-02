@@ -12,7 +12,7 @@
   * [补充](python/09_补充/)
 
 * [**前端**](web/es6/Promise对象.md)
-	* [**Promise对象**](web/es6/Promise对象.md) 
+	* [Promise对象](web/es6/Promise对象.md) 
 
 * [**设计模式**](design-patterns/设计模式的七大原则.md)
   * [设计模式的七大原则](design-patterns/设计模式的七大原则.md)
@@ -36,6 +36,6 @@
 * [**Tools**](tools/IDEA快捷键大全.md)
   * [IDEA快捷键大全](tools/IDEA快捷键大全.md)
   * [vscode快捷键大全](tools/vscode快捷键大全.md)
-  * [**Mark语法说明**](tools/Mark语法说明.md)
+  * [Mark语法说明](tools/Mark语法说明.md)
 
 
