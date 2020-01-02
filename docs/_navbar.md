@@ -23,7 +23,8 @@
   * [线程池](multithreads/线程池.md)
   * [线程安全问题产生的原因](multithreads/线程安全问题产生的原因.md)
   * [ConcurrentHashMap源码解析](multithreads/ConcurrentHashMap源码解析.md)
-
+  * [Java中的锁](multithreads/Java中的锁.md)
+  
 * [**服务器**](webserver/linux常用命令.md)
   * [PM2的常用命令及安装教程](webserver/PM2的常用命令及安装教程.md)
   * [如何在centos7上安装nginx](webserver/如何在centos7上安装nginx.md)
@@ -36,6 +37,6 @@
 * [**Tools**](tools/IDEA快捷键大全.md)
   * [IDEA快捷键大全](tools/IDEA快捷键大全.md)
   * [vscode快捷键大全](tools/vscode快捷键大全.md)
-  * [Mark语法说明](tools/Mark语法说明.md)
+  * [Markdown语法说明](tools/Mark语法说明.md)
 
 
