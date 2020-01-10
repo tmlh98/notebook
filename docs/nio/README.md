@@ -13,11 +13,11 @@ Java NIO可以让你非阻塞的使用IO，例如：当线程从通道读取数�
 Java NIO引入了选择器的概念，选择器用于监听多个通道的事件（比如：连接打开，数据到达）。因此，单个的线程可以监听多个数据通道。
 下面是Java NIO系列文章的目录：[Java NIO Tutorial](http://tutorials.jenkov.com/java-nio/index.html "Java NIO Tutorial")
 
-1. [**Java NIO 概述**](nio/overview.md) 
+1. [**Java NIO Overview**](nio/overview.md) 
 2. [**Java NIO Channel**](nio/channel.md) 
 3. [**Java NIO Buffer**](nio/buffer.md) 
 4. [**Java NIO Scatter/Gather**](nio/scattergather.md) 
-5. [**Java NIO 通道之间的数据传输**](nio/channel-to-channel-transfers.md) 
+5. [**Java NIO Channel to Channel Transfers**](nio/channel-to-channel-transfers.md) 
 6. [**Java NIO Selector**](nio/selector.md) 
 7. [**Java NIO FileChannel**](nio/file-channel.md) 
 8. [**Java NIO SocketChannel**](nio/socket-channel.md) 
