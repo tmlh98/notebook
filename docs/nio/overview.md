@@ -42,7 +42,7 @@ Java NIO 还有个 MappedByteBuffer，用于表示内存映射文件， 我也�
 Selector允许单线程处理多个 Channel。如果你的应用打开了多个连接（通道），但每个连接的流量都很低，使用Selector就会很方便。例如，在一个聊天服务器中。
 
 这是在一个单线程中使用一个Selector处理3个Channel的图示：
-![overview-selectors](./images/overview-selectors.png)
+![overview-selectors](./image/overview-selectors.png)
 
 
 要使用Selector，得向Selector注册Channel，然后调用它的select()方法。这个方法会一直阻塞到某个注册的通道有事件就绪。一旦这个方法返回，线程就可以处理这些事件，事件的例子有如新连接进来，数据接收等。
