@@ -1,7 +1,6 @@
   * [**Overview**](nio/overview.md) 
   * [**Buffer**](nio/buffer.md) 
   * [**Channel**](nio/channel.md) 
-  * [**Selector**](nio/selector.md) 
   * [**Scatter/Gather**](nio/scattergather.md) 
   * [**Channel to Channel Transfers**](nio/channel-to-channel-transfers.md) 
   * [**Selector**](nio/selector.md) 
