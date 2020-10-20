@@ -289,4 +289,7 @@ $ git checkout -b dev origin/dev
 
 # 修改commit注释
 $git commit --amend
+
+#刷新一下本地缓存
+$git rm -r --cached .
 ```
