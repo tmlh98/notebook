@@ -1,4 +1,4 @@
-* [**Python**](python/)
+
 
 * [**设计模式**](design-patterns/设计模式的七大原则.md)
 
@@ -16,3 +16,6 @@
 
 
 * [**Java**](java/开发笔记.md)
+
+
+* [**Python**](python/)
