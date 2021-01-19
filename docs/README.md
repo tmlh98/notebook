@@ -17,5 +17,3 @@
 
 * [**Java**](java/开发笔记.md)
 
-
-* [**Python**](python/)
