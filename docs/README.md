@@ -28,15 +28,15 @@
 
 
 
-[《Java面试手册》](../pdf/《Java面试手册》.pdf "《Java面试手册》")
+[《Java面试手册》](http://39.108.156.110/pdf/《Java面试手册》.pdf "《Java面试手册》")
 
 
-[Java 基础核心总结](../pdf/Java 基础核心总结.pdf "Java 基础核心总结")
+[Java基础核心总结](http://39.108.156.110/pdf/Java基础核心总结.pdf "Java 基础核心总结")
 
 
-[JAVA核心知识点整理](../pdf/JAVA核心知识点整理.pdf "JAVA核心知识点整理")
+[JAVA核心知识点整理](http://39.108.156.110/pdf/JAVA核心知识点整理.pdf "JAVA核心知识点整理")
 
-[Java-华山版1565599341](../pdf/Java-华山版1565599341.pdf "Java-华山版1565599341")
+[Java-华山版1565599341](http://39.108.156.110/pdf/Java-华山版1565599341.pdf "Java-华山版1565599341")
 
 
 
