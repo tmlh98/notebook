@@ -16,6 +16,7 @@
 * [**Java**](java/开发笔记.md)
 
 
+* [**前端**](web/es6/Promise对象.md)
 
 
 

@@ -7,9 +7,6 @@
   * [ConcurrentHashMap源码解析](multithreads/ConcurrentHashMap源码解析.md)
   * [Java中的锁](multithreads/Java中的锁.md)
 
-* [**前端**](web/es6/Promise对象.md)
-  * [Promise对象](web/es6/Promise对象.md) 
-
 * [**设计模式**](design-patterns/设计模式的七大原则.md)
   * [设计模式的七大原则](design-patterns/设计模式的七大原则.md)
   * [UML类图](design-patterns/UML类图.md)
@@ -28,5 +25,11 @@
   * [vscode快捷键大全](tools/vscode快捷键大全.md)
   * [Markdown语法说明](tools/Mark语法说明.md)
   * [**windows相关**](tools/windows相关.md)
-
   ​
+* [**JVM**](java/JVM/JVM上篇：内存与垃圾回收篇/第1章：JVM与Java体系结构.md)
+  * [第1章：JVM与Java体系结构](java/JVM/JVM上篇：内存与垃圾回收篇/第1章：JVM与Java体系结构.md) 
+  * [第2章：类加载子系统](java/JVM/JVM上篇：内存与垃圾回收篇/第2章：类加载子系统.md) 
+  * [第3章：运行时数据区概述及线程](java/JVM/JVM上篇：内存与垃圾回收篇/第3章：运行时数据区概述及线程.md)   
+  * [第4章：程序计数器](java/JVM/JVM上篇：内存与垃圾回收篇/第4章：程序计数器.md) 
+  * [第5章：虚拟机栈](java/JVM/JVM上篇：内存与垃圾回收篇/第5章：虚拟机栈.md) 
+  * [第6章：本地方法接口](java/JVM/JVM上篇：内存与垃圾回收篇/第6章：本地方法接口.md) 
