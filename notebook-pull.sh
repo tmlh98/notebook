@@ -1,3 +1,3 @@
-cd /mydata/nginx/html/notebook/
+cd /www/git/notebook/
 git pull 
 
